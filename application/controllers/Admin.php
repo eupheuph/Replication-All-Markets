@@ -5,8 +5,7 @@ class Admin extends CI_Controller {
 
     public function __construct() {
         parent::__construct();
-        $this->load->model('User_model');
-       // $this->load->model('Slideshow_model');   
+        $this->load->model('User_model'); 
         $this->load->model('Country_model');     
         $this->load->helper('url');
         $this->load->library('form_validation');
@@ -16,6 +15,7 @@ class Admin extends CI_Controller {
             $this->session->set_flashdata('error', 'Access denied. Admin only.');
             redirect('auth/login');
         }
+        $this->load->model('Admin_model');
     }
 
     // Dashboard 

@@ -57,3 +57,4 @@ $route['logout']   = 'auth/logout';
 $route['dashboard'] = 'dashboard/index';
 $route['admin'] = 'admin';
 $route['translate_uri_dashes'] = FALSE;
+$route['admin/dashboard'] = 'admin/dashboard';
